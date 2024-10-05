@@ -1,0 +1,29 @@
+#include <iostream>
+
+#include <stdio.h>
+
+//pour avoir le factoriel d`un nombre 
+
+int main(int argv, char** argc)
+
+{
+
+    //declaration des varaible 
+
+    unsigned int fact=1,i=1,num;
+
+    std::cout<<"Enter le nombre donc vous voulez avoir le factoriel :";
+
+    std::cin>>num;
+
+    for(i=1;i<=num;i++)
+
+    {
+
+        fact=fact*i;
+
+    }
+
+    std::cout<<"le factoriel de "<<num<<" est "<<fact<<;
+
+}
