@@ -1,0 +1,59 @@
+#include <stdio.h>
+
+#include <iostream>
+
+#include <stdio.h>
+
+#include <math.h>
+
+
+
+ int main()
+
+ {
+
+    float x1,x2,y1,y2,x3,y3,AB,AC,BC;
+
+    std::cout<<"please enter the coordinate of the following pionts\n";
+
+    std::cout<<"point A\n";
+
+    std::cin>>x1>>y1;
+
+
+
+    std::cout<<"point B\n";
+
+   std::cin>>x2>>y2;
+
+
+
+    std::cout<<"point C\n";
+
+    std::cin>>x3>>y3;
+
+    
+
+    std::cout<<"these are the points you have enter \n";
+
+    printf("point A (%.1f,%.1f)\n",x1,y1);
+
+    printf("point B (%.1f,%.1f)\n",x2,y2);
+
+    printf("point C (%.1f,%.1f)\n",x3,y3);
+
+
+
+   AB=sqrt(pow((x2-x1),2)+pow((y2-y1),2));
+
+   AC=sqrt(pow((x3-x1),2)+pow((y3-y1),2)); 
+
+   BC=sqrt(pow((x3-x2),2)+pow((y3-y2),2));
+
+
+
+   std::cout<<"the distance between the point A and B is \n"<<AB;
+
+   std::cout<<"the distance between the point A and C is \n"<<AC;
+
+   std::cout<<"the distance between the point B and c is \n"<<BC;
