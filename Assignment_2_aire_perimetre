@@ -1,0 +1,127 @@
+#include <iostream>
+
+#include <stdio.h>
+
+#include <math.h>
+
+
+
+int main()
+
+{
+
+
+
+    unsigned int option;
+
+    float area,per;
+
+    const pi =3.14;
+
+    std::cout<<"chose the 2D figure you want to calculate the area and perimeter  :\n";
+
+    std::cout<<"1.circle \n 2.rectangle \n 3.triangle\n ";
+
+    std::cin>>option;
+
+    switch(option)
+
+    {
+
+        case 1:
+
+        {
+
+            float r;
+
+            std::cout<<"enter the raduis if the circle :";
+
+            std::cin>>r;
+
+            area=r*r*pi;
+
+            per=2*r*pi;
+
+         std::cout<<"the perimeter is "<<per:
+
+            std::cout<<"the area of the circle is "<<area;
+
+        }break;
+
+        case 2:
+
+        {
+
+            float len,wid;
+
+            std::cout<<"Enter the length and width of the rectangle \n ";
+
+            std::cin>>len>>wid;
+
+            area=len*wid;
+
+            per=(len+wid)*2;
+
+            std::cout<<"the perimeter is "<<"per";
+
+            std::cout<<"the area of the rectangle is "<<area<<"\n";
+
+        }break;
+
+        case 3:
+
+        {
+
+             float a,b,c;
+
+            unsigned  int op;
+
+            std::cout<<"chose between the following \n";
+
+            std::cout<<"1.right angle triangle \n 2.others ";
+
+            std::cin>>op;
+
+            if(op==1)
+
+            {
+
+            std::cout<<"Enter the base and height of the triangle\n ";
+
+            std::cin>>b>>a;
+
+            std::cout>>"Enter the hypothenuse of the triangle ";
+
+            area=0.5*b*a;   
+
+            per=a+b+c;
+
+            }
+
+            else if(op==2)
+
+            {
+
+                float s;
+
+                std::cout<<"Enter the value of the 3 sides of the triangle ";
+
+                std::cin>>a>>b>>c;
+
+                s=0.5*(a+b+c);
+
+              area=sqrt(s*(s-a)*(s-b)*(s-c));
+
+              per=a+b+c;  
+
+            }
+
+            std::cout<<"the perimeter of the triangle is"<<per<<"\n";
+
+            std::cout<<"the area of the triangle is "<<area<<"\n";
+
+        }break;
+
+    }
+
+}
